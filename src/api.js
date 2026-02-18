@@ -1,4 +1,4 @@
-export const getTodos = async () => {
+export const getTodos = async (filter) => {
   const mockData = [
     {
       id: '1',
@@ -43,6 +43,7 @@ export const getTodos = async () => {
     status: 200,
     headers: {
       'Content-Type': 'application/json',
+      filter: filter
     },
   })
 }
